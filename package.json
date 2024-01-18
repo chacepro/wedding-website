@@ -15,9 +15,7 @@
     "template",
     "website template"
   ],
-  "author": "Ram Patra",
   "license": "GPL-3.0",
-  "homepage": "https://github.com/rampatra/wedding-website",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
