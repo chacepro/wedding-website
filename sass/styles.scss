@@ -318,7 +318,7 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
+  min-height: 550px;
   background: url('../img/received_10154724178852100.jpeg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -358,7 +358,7 @@ Hero
 }
 
 .navigation {
-  transition: all 300ms ease-in-out;
+  transition: all 350ms ease-in-out;
   position: fixed;
   width: 100%;
   z-index: 999;
