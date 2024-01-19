@@ -26,6 +26,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "font-awesome": "^4.7.0",
+    "pug": "^3.0.2",
     "waypoints": "^4.0.1"
   }
 }
