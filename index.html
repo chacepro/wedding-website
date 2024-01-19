@@ -22,7 +22,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
     <style type="text/css">
         
@@ -32,10 +32,12 @@
         }
 
         body {
-            height: 100%;
             background: #000000;
-            background-image: url("../img/winter-trees-snow-bench-night-lights-park.jpg");
-            background-size: contain;
+            background-image: url("../img/winter-trees-snow-bench-night-lights-park.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         div#wrapper {
@@ -47,7 +49,7 @@
         div#tempPage {
             display: table-cell;
             vertical-align: middle;
-            font-family: 'Grape Nuts', cursive;
+            font-family: 'Merriweather', serif;
             font-size: 70px;
             text-align: center;
             font-weight: bolder;
