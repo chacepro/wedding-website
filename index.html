@@ -50,6 +50,16 @@
             top: -5vh;
         }
 
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cdc2ff, 0 0 40px #a4a3e2, 0 0 50px #928bf0;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #4845ff, 0 0 40px #594dff, 0 0 50px #5f4dff, 0 0 60px #594dff;
+            }
+        }
+
         @keyframes snowfall {
             0% {
                 transform: translate3d(var(--left-ini), 0, 0);
@@ -57,17 +67,6 @@
 
             100% {
                 transform: translate3d(var(--left-end), 110vh, 0);
-            }
-        }
-
-        @for $i from 1 through 50 {
-            .snowflake:nth-child(#{$i}) {
-                --size: #{random(5) * 0.1}vw;
-                --left-ini: #{random(20) - 10}vw;
-                --left-end: #{random(20) - 10}vw;
-                left: #{random(100)}vw;
-                animation: snowfall #{5 + random(10)}s linear infinite;
-                animation-delay: -#{random(10)}s;
             }
         }
 
@@ -90,16 +89,6 @@
             text-align: center;
             font-weight: bolder;
             animation: glow 2s ease-in-out infinite alternate;
-        }
-
-        @-webkit-keyframes glow {
-            from {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cdc2ff, 0 0 40px #a4a3e2, 0 0 50px #928bf0;
-            }
-
-            to {
-                text-shadow: 0 0 20px #fff, 0 0 30px #4845ff, 0 0 40px #594dff, 0 0 50px #5f4dff, 0 0 60px #594dff;
-            }
         }
     </style>
 
