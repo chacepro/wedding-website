@@ -1,3 +1,3 @@
-let pug = require("pug");
+var pug = require('pug');
 
 pug.render("div(class='snowflake')");
