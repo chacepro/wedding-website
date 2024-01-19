@@ -26,13 +26,23 @@
 
     <style type="text/css">
         
+        html {
+            min-height: 100%; /* make sure it is at least as tall as the viewport */
+            position:relative;
+        }
+
         body {
+            height: 100%;
             background: #000000;
         }
 
         div#tempPage {
-            height:max-content;
-            width: 100%;
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            overflow:hidden;
             font-family: 'Grape Nuts', cursive;
             font: 400;
             text-align: center;
