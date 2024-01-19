@@ -25,20 +25,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
     <style type="text/css">
-        
-        html {
-            min-height: 100%; /* make sure it is at least as tall as the viewport */
-            position:relative;
-        }
 
-        body {
+        html, body {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
             background: url("../img/winter-trees-snow-bench-night-lights-park.jpg") no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
         }
-
+        
+        .snowflake {
+            --size: 1vw;
+            width: var(--size);
+            height: var(--size);
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: -5vh;
+        }
+        
+        @keyframes snowfall {
+            0% {
+                transform: translate3d(var(--left-ini), 0, 0);
+            }
+            100% {
+                transform: translate3d(var(--left-end), 110vh, 0);
+            }
+        }
+        
+        @for $i from 1 through 50 {
+            .snowflake:nth-child(#{$i}) {
+                --size: #{random(5) * 0.2}vw;
+                --left-ini: #{random(20) - 10}vw;
+                --left-end: #{random(20) - 10}vw;
+                left: #{random(100)}vw;
+                animation: snowfall #{5 + random(10)}s linear infinite;
+                animation-delay: -#{random(10)}s;
+            }
+        }
+        
+        /* added small blur every 6 snowflakes*/
+        .snowflake:nth-child(6n) {
+            filter: blur(1px);
+        }
+        
         div#wrapper {
             display: table;
             height: 100vh;
@@ -75,6 +111,9 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
+- for (i = 0; i < 50; i++)
+  div(class="snowflake")
+    
 <div id="wrapper">
     <div id="tempPage">December 14th, 2024</div>
 </div>
