@@ -191,7 +191,7 @@ Animations
   }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 70 {
   .snowflake:nth-child(#{$i}) {
     --size: #{random(5) * 0.1}vw;
     --left-ini: #{random(20) - 10}vw;
