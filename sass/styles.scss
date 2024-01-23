@@ -198,7 +198,7 @@ Animations
     --left-end: #{random(20) - 10}vw;
     left: #{random(100)}vw;
     animation: snowfall #{5 + random(15)}s linear infinite;
-    animation-delay: -#{random(15)}s;
+    animation-delay: -#{random(5)}s;
   }
 }
 
