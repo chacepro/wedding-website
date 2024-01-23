@@ -42,7 +42,7 @@
         }
 
         .snowflake {
-            --size: 1.1vw;
+            --size: 1.5vw;
             width: var(--size);
             height: var(--size);
             background: white;
@@ -72,7 +72,7 @@
         }
 
         /* added small blur every 6 snowflakes*/
-        .snowflake:nth-child(6n) {
+        .snowflake:nth-child(7n) {
             filter: blur(1px);
         }
 
@@ -92,6 +92,7 @@
             animation: glow 2s ease-in-out infinite alternate;
             z-index: -1;
         }
+        
         span.smaller {
           font-size: 30px;
         }
