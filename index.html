@@ -83,13 +83,26 @@
             width: 100vw;
         }
 
+        div#info {
+            display: block;
+            position: relative;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: rgb(247, 247, 203);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1vw;
+            text-align: center;
+            color: rgb(86, 86, 86);
+        }
+
         div#tempPage {
             display: table-cell;
             vertical-align: middle;
             font-family: "Satisfy", cursive;
             font-size: 6vw;
             text-align: center;
-            font-weight: bolder;
             color: rgb(86, 86, 86);
             animation: glow 3s ease-in-out infinite alternate;
             z-index: -1;
@@ -256,12 +269,21 @@
     <div class="snowflake"></div>
 
     <div id="wrapper">
+        <div id="info">
+            <b>Broadmoor Room Block Rates</b><br />
+            Classic - $290.00<br />
+            Superior - $324.24<br />
+            Premier - $358.27<br />
+            <br /><br />
+            <b>Double Tree Room Block Rates</b><br />
+            Standard - <br /><br />
+            <i>* Rate includes all fees, taxes & resort fees</i>
+        </div>
         <div id="tempPage">
-            December 14<sup>th</sup>, 2024
-            <br />
             <span class="smaller">
                 Chace & Heather
-            </span>
+            </span><br />
+            December 14<sup>th</sup>, 2024
         </div>
     </div>
 
