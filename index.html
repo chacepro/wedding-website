@@ -28,8 +28,9 @@
 
     <style type="text/css">
         :root {
-            Glow: black;
-            Radius: 5px;
+            --Glow: rgba(255, 255, 255, 0.612);
+            --mGlow: 8px;
+            --Radius: 8px;
         }
 
         html,
@@ -83,34 +84,34 @@
         }
 
         div#wrapper {
-            display: table;
+            display: block;
             height: 100vh;
             width: 100vw;
+            text-align: center;
         }
 
         div#info {
-            display: block;
-            position: fixed;
-            padding: 10px;
-            margin: 10px;
-            border: 1px solid gray;
-            background-color: rgb(247, 247, 203);
+            display: inline-block;
+            padding: 15px;
+            margin-top: 55px;
+            background-color: rgba(247, 247, 203, 0.854);
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1vw;
-            text-align: center;
             color: rgb(86, 86, 86);
+            text-align: center;
+            vertical-align: middle;
             -moz-border-radius: var(--Radius);
             -webkit-border-radius: var(--Radius);
             -khtml-border-radius: var(--Radius);
             border-radius: var(--Radius);
-            -webkit-box-shadow: 0 0 var(--Glow) var(--Glow);
-            -moz-box-shadow: 0 0 var(--Glow) var(--Glow);
-            box-shadow: 0 0 var(--Glow) var(--Glow);
+            -webkit-box-shadow: 0 0 var(--mGlow) var(--Glow);
+            -moz-box-shadow: 0 0 var(--mGlow) var(--Glow);
+            box-shadow: 0 0 var(--mGlow) var(--Glow);
         }
 
         div#tempPage {
-            display: table-cell;
-            vertical-align: middle;
+            display: block;
+            margin-top: 60px;
             font-family: "Satisfy", cursive;
             font-size: 6vw;
             text-align: center;
@@ -120,7 +121,7 @@
         }
 
         span.smaller {
-            font-size: 4vw;
+            font-size: 3.5vw;
         }
     </style>
 
@@ -280,21 +281,21 @@
     <div class="snowflake"></div>
 
     <div id="wrapper">
-        <div id="info">
-            <b>Broadmoor Room Block Rates</b><br />
-            Classic - $290.00<br />
-            Superior - $324.24<br />
-            Premier - $358.27<br />
-            <br /><br />
-            <b>Double Tree Room Block Rates</b><br />
-            Standard - <br /><br />
-            <i>* Rate includes all fees, taxes & resort fees</i>
-        </div>
         <div id="tempPage">
             <span class="smaller">
                 Chace & Heather
             </span><br />
             December 14<sup>th</sup>, 2024
+        </div>
+        <div id="info">
+            <b>Broadmoor Room Block Rates</b><br />
+            Classic - $290<br />
+            Superior - $324<br />
+            Premier - $358<br />
+            <br /><br />
+            <b>Double Tree Room Block Rates</b><br />
+            Standard - $129<br /><br />
+            <i>* Rate includes all fees, taxes & resort fees</i>
         </div>
     </div>
 
