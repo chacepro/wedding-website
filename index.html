@@ -27,6 +27,11 @@
     <link rel="stylesheet" href="css/styles.min.css">
 
     <style type="text/css">
+        :root {
+            Glow: black;
+            Radius: 5px;
+        }
+
         html,
         body {
             padding: 0;
@@ -85,16 +90,22 @@
 
         div#info {
             display: block;
-            position: relative;
+            position: fixed;
             padding: 10px;
             margin: 10px;
             border: 1px solid gray;
-            border-radius: 5px;
             background-color: rgb(247, 247, 203);
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1vw;
             text-align: center;
             color: rgb(86, 86, 86);
+            -moz-border-radius: var(--Radius);
+            -webkit-border-radius: var(--Radius);
+            -khtml-border-radius: var(--Radius);
+            border-radius: var(--Radius);
+            -webkit-box-shadow: 0 0 var(--Glow) var(--Glow);
+            -moz-box-shadow: 0 0 var(--Glow) var(--Glow);
+            box-shadow: 0 0 var(--Glow) var(--Glow);
         }
 
         div#tempPage {
