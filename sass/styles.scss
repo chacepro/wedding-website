@@ -318,7 +318,7 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 650px;
+  min-height: 450px;
   background: url('../img/CH-Background.jpeg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -326,11 +326,6 @@ Hero
   background-size: cover;
   position: relative;
 
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
   .down-arrow a {
     color: $txt-light;
   }
@@ -348,12 +343,13 @@ Hero
   }
 
   .hero-content {
-    padding-top: 40%;
+    padding-top: 30%;
+    opacity: 80%;
   }
 
   .hero-content img {
-    width: 55%;
-    margin-bottom: 12%;
+    width: 85%;
+    margin-bottom: 10%;
   }
 }
 
@@ -394,7 +390,7 @@ header {
   }
 
   .logo img {
-    height: 19px;
+    height: 50px;
   }
 
   ul.primary-nav {
