@@ -3,13 +3,17 @@
 @import "partials/colors";
 
 .btn {
-	font-size: 13px;
+	font-size: 15px;
+	font-weight: bold;
 	border: solid 2px;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
 	display: inline-block;
 	text-transform: uppercase;
+}
+.btn-rsvp-top {
+	background-color: rgba(0, 0, 0, 0.6);
 }
 .btn:hover, .btn:focus {
 	color: $white-color;
