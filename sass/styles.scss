@@ -65,7 +65,7 @@ ul li {
 }
 
 section .header {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .section-padding {
@@ -367,8 +367,8 @@ Hero
 }
 
 header {
-  padding: 50px 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  padding: 35px 0;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
   position: relative;
   width: 1170px;
   margin: 0 auto;
@@ -404,7 +404,7 @@ header {
         padding-right: 25px;
 
         &:hover {
-          color: $accent-color;
+          color: $accent-color-custom;
         }
       }
 
@@ -422,7 +422,7 @@ header {
         color: $txt-light;
 
         &:hover {
-          color: $accent-color;
+          color: $accent-color-custom;
         }
       }
     }
