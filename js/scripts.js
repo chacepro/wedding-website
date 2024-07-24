@@ -182,7 +182,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Chace & Heather's Wedding & Reception",
+            title: "Chace and Heather's Wedding and Reception",
 
             // Event start date
             start: new Date('Dec 14, 2024 15:30'),
