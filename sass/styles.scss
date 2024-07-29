@@ -330,6 +330,7 @@ Hero
 
   .down-arrow a {
     color: $txt-light;
+    border: 0px;
   }
 
   h1 {
@@ -1038,6 +1039,7 @@ footer {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    border-bottom: 0px;
   }
 
   .to-top-wrapper .to-top:hover {
