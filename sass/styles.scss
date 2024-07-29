@@ -34,12 +34,14 @@ a {
   transition-duration: 200ms;
   -webkit-transition-property: color, border-color, background-color;
   transition-property: color, border-color, background-color;
+  border-bottom: $accent-color-under solid 2.5px;
 }
 
 a:hover,
 a:focus {
   color: $accent-color-hover;
   text-decoration: none;
+  border-bottom: $accent-color-under-hover solid 2.5px;
 }
 
 body {
@@ -357,6 +359,10 @@ Hero
   position: fixed;
   width: 100%;
   z-index: 999;
+
+  .logo-custom:hover {
+    border:0px;
+  }
 }
 
 .fixed {
@@ -378,6 +384,7 @@ header {
     color: $txt-light;
     text-transform: uppercase;
     font-size: $nav-font-size;
+    border: 0px;
 
     &.login {
       margin-right: 20px;
@@ -402,9 +409,11 @@ header {
       a {
         color: $txt-light;
         padding-right: 25px;
+        
 
         &:hover {
           color: $accent-color-custom;
+          border: 0px;
         }
       }
 
